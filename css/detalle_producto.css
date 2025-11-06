@@ -1,0 +1,169 @@
+/* ======= Paleta =======
+Azul petróleo: #224C65
+Beige claro:   #E3D9D7
+Rojo vino:     #AF3F45
+Mostaza:       #C07F3D
+Gris azulado:  #828E94
+Rosa viejo:    #CA838A
+======================== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E3D9D7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ====== Contenedor general ====== */
+.producto-detalle {
+  background-color: #fff;
+  width: 90%;
+  max-width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(34, 76, 101, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ====== Botón regresar ====== */
+.btn-regresar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  color: #224C65;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ====== Imagen ====== */
+.producto-imagen {
+  background-color: #224C65;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.producto-imagen img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* ====== Información ====== */
+.producto-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.precio {
+  margin-bottom: 10px;
+}
+
+.precio-actual {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #224C65;
+  margin-right: 10px;
+}
+
+.precio-antiguo {
+  font-size: 1rem;
+  color: #828E94;
+  text-decoration: line-through;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: #224C65;
+  margin-bottom: 20px;
+}
+
+.envio {
+  background-color: #F9F7F6;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.envio h4 {
+  margin: 0 0 10px;
+  color: #224C65;
+  font-size: 1rem;
+}
+
+.envio-tipo {
+  background-color: #CA838A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.envio p {
+  font-size: 0.85rem;
+  color: #224C65;
+}
+
+/* ====== Botones ====== */
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-comprar {
+  background-color: #224C65;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #AF3F45;
+}
+
+.btn-carrito {
+  background-color: #828E94;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-carrito:hover {
+  background-color: #C07F3D;
+}
+
+.btn-favorito {
+  background-color: transparent;
+  border: 2px solid #CA838A;
+  color: #CA838A;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  margin: 10px auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-favorito:hover {
+  background-color: #CA838A;
+  color: #fff;
+}

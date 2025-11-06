@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Fondo y contenedor ===== */
+body {
+    background-color: #E3D9D7; /* Beige claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* ===== Logo ===== */
+.logo img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+/* ===== Título de la app ===== */
+.app-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #224C65; /* Azul petróleo */
+    margin-bottom: 10px;
+}
+
+/* ===== Nombre de la empresa ===== */
+.company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #828E94; /* Gris azulado */
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+/* ===== Botones ===== */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Botón de inicio de sesión */
+.btn-login {
+    background-color: #AF3F45; /* Rojo vino */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botón de crear cuenta */
+.btn-register {
+    background-color: transparent;
+    color: #224C65; /* Azul petróleo */
+    border: 1.8px solid #224C65;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ===== Efectos hover ===== */
+.btn-login:hover {
+    background-color: #C07F3D; /* Mostaza */
+}
+
+.btn-register:hover {
+    background-color: #CA838A; /* Rosa viejo */
+    color: #fff;
+    border-color: #CA838A;
+}

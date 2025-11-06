@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda escolar</title>
+  
+  <link rel="stylesheet" href="../css/productos.css">
+  
+</head>
+<body>
+
+  <h1>Menú Principal - Tienda Escolar</h1>
+
+  <div class="productos">
+    <div class="producto" onclick="mostrarDetalle('Goma escolar', 'https://via.placeholder.com/200x200?text=Goma', 'Tipo: Escolar', 'Goma blanca ideal para borrar lápiz sin manchar el papel.')">
+      <img src="https://via.placeholder.com/200x200?text=Goma" alt="Goma escolar">
+      <h3>Goma escolar</h3>
+      <p>$10.00</p>
+    </div>
+
+    <div class="producto" onclick="mostrarDetalle('Lápiz No.2', 'https://via.placeholder.com/200x200?text=Lápiz', 'Tipo: Escolar', 'Lápiz de grafito No.2 con borrador, ideal para escritura y dibujo.')">
+      <img src="https://via.placeholder.com/200x200?text=Lápiz" alt="Lápiz">
+      <h3>Lápiz No.2</h3>
+      <p>$5.00</p>
+    </div>
+
+    <div class="producto" onclick="mostrarDetalle('Colores 12 piezas', 'https://via.placeholder.com/200x200?text=Colores', 'Tipo: Escolar', 'Caja de colores con 12 tonos brillantes y resistentes.')">
+      <img src="https://via.placeholder.com/200x200?text=Colores" alt="Colores">
+      <h3>Colores 12 piezas</h3>
+      <p>$40.00</p>
+    </div>
+  </div>
+
+  <div id="detalle" class="detalle">
+    <div class="detalle-contenido">
+      <button class="cerrar" onclick="cerrarDetalle()">×</button>
+      <img id="detalle-img" src="" alt="Imagen del producto">
+      <h2 id="detalle-nombre"></h2>
+      <p id="detalle-tipo"></p>
+      <p id="detalle-descripcion"></p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarDetalle(nombre, imagen, tipo, descripcion) {
+      document.getElementById("detalle-nombre").textContent = nombre;
+      document.getElementById("detalle-img").src = imagen;
+      document.getElementById("detalle-tipo").textContent = tipo;
+      document.getElementById("detalle-descripcion").textContent = descripcion;
+      document.getElementById("detalle").style.display = "flex";
+    }
+
+    function cerrarDetalle() {
+      document.getElementById("detalle").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

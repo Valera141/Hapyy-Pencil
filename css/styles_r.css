@@ -1,0 +1,106 @@
+/* ===== Estructura general ===== */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3D9D7; /* gris claro de la paleta */
+  font-family: Arial, sans-serif;
+  color: #224C65;
+}
+
+/* ===== Contenedor principal ===== */
+.registro-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 360px;
+  text-align: center;
+  position: relative;
+}
+
+/* ===== Encabezado ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.back {
+  text-decoration: none;
+  font-size: 22px;
+  color: #224C65;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 22px;
+  color: #224C65;
+}
+
+h2 {
+  margin: 0;
+  color: #224C65;
+  font-size: 1.5em;
+}
+
+/* ===== Logo ===== */
+.logo {
+  text-align: center;
+  margin: 15px 0 25px;
+}
+
+.logo img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+/* ===== Formulario ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #828E94;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #C07F3D; /* Mostaza */
+}
+
+/* ===== Botón ===== */
+.btn {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #224C65; /* Azul oscuro */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #C07F3D; /* Mostaza */
+  transform: scale(1.05);
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 400px) {
+  .registro-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
